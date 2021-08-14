@@ -1,0 +1,5 @@
+{
+'2x2=? Type Your Answer:':'4',
+"2x3=? Type Your Answer:":'6',
+"2x4=? Type Your Answer:":'8',
+}
