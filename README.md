@@ -1,5 +1,8 @@
 # mathQ
-math question game for kids
+math question game for kids 
+
+JUST need to run mathQ.py
+
 
 example output:
 
