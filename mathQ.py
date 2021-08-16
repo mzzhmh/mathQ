@@ -43,9 +43,15 @@ if tst == "give me five":
     jms.life = 5
 
 mst.show()
+mst.showRank()
 
+print("**********************************")
+print("         TIMING STARTED!          ")
+print("**********************************")
+
+jms.startT = int(time.time())
 #randomly pick a question
-while (mst.stillAlive() and jms.stillAlive()):
+while (mst.stillAlive(jms) and jms.stillAlive()):
     print("===========================================================")
     theQ = mst.pickQ()
     chkOK = jms.answer(theQ)

@@ -69,5 +69,5 @@
 "9+6=? Type Your Answer:":'15',
 "9+7=? Type Your Answer:":'16',
 "9+8=? Type Your Answer:":'17',
-"9+9=? Type Your Answer:":'18',
+"9+9=? Type Your Answer:":'18'
 }

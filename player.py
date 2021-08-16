@@ -3,6 +3,8 @@ class player:
     def __init__(self,life=2):
         self.life = life
         self.helpCnt = 0
+        self.startT = 0
+        self.endT = 0
         
     def printLife(self):
         lf = "|"
