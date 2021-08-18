@@ -5,7 +5,6 @@ class player:
         self.helpCnt = 0
         self.startT = 0
         self.endT = 0
-        self.weapon = 1
         
     def printLife(self):
         lf = "|"

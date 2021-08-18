@@ -1,0 +1,15 @@
+{
+'347 x 678=? Type Your Answer (remember to put ",". e.g. 123,456):':'235,266',
+'14 x 13 + 98=? Type Your Answer:':'280',
+'11 x 16 + 17 x 6=? Type Your Answer (HINT:Multiplication has higher priority than addition. You need to calculate Multiplication first!):':'278',
+'10 x a + 5 x a = 45. whats the value of a=?:':'3',
+'10 x a - 6 x a = 16. whats the value of a=?:':'4',
+'2997 + 9995 = ? Type your answer (remember to put ",". e.g. 123,456):':'12,992',
+'10012 - 9994 = ? Type Your Answer:':'18',
+'Compare 3/8 and 1/4 Type Your Answer ("<" or ">" or "="):':'>',
+'Compare 7/15 and 1/3 Type Your Answer ("<" or ">" or "="):':'>',
+'Compare 6/13 and 7/15 Type Your Answer ("<" or ">" or "="):':'<',
+'Compare 27/81 and 1/3 Type Your Answer ("<" or ">" or "="):':'=',
+'43/81 - 4/9 = ? Type your answer (e.g., 11/73):':'7/81',
+'5/13 + 4/9 = ? Type your answer (e.g., 11/73):':'97/117'
+}

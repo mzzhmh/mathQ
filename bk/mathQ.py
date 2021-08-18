@@ -11,13 +11,13 @@ print("===========================================================")
 chs = 0
 print("THERE ARE FOUR MONSTERS.\n PICK ONE MONSTER YOU WOULD LIKE TO CHALLENGE! BE CAREFUL!!!!!!!!\n")
 print("===========================================================")
-print("1. Multiplication MONSTER\n2. Division MONSTER\n3. Addition MONSTER\n4. Substraction MONSTER\n5. Text Question MONSTER\n")
+print("1. Multiplication MONSTER\n2. Division MONSTER\n3. Addition MONSTER\n4. Substraction MONSTER\n")
 print("===========================================================")
 
 
 
-while (chs not in ['1','2','3','4','5']):
-    chs = input("PLEASE CHOOSE WHICH MONSTER YOU WANT TO FIGHT? (1, 2, 3, 4 or 5?):")
+while (chs not in ['1','2','3','4']):
+    chs = input("PLEASE CHOOSE WHICH MONSTER YOU WANT TO FIGHT? (1, 2, 3 or 4?):")
 
 if chs == '1':
     mst = mulMonster()
@@ -28,12 +28,9 @@ elif chs == '2':
 elif chs == '3':
     mst = addMonster()
     mst.loadQ("addQ.txt")
-elif chs == '4':
+else:
     mst = subMonster()
     mst.loadQ("subQ.txt")
-else:
-    mst = yytMonster1()
-    mst.loadQ("yyt1Q.txt")
     
 print("===========================================================")
 print('YOU NEED TO KILL THE MONSTER BY ANSWERING THE QUESTIONS!\n\nARE YOU READY? :) HIT "Enter" KEY TO PROCEED!\n')
@@ -45,16 +42,6 @@ tst = input(":")
 if tst == "give me five":
     jms.life = 5
 
-#give sword to player?
-if (mst.__class__.__name__ == 'yytMonster1'):
-    pans = ''
-    while (pans != 'yes' and pans != 'no'):
-        pans = input('\n==============================================\n   DO YOU WANT TO PICKUP A SWORD? ATTACK +5 (Type: yes OR no):\n===========================================\n:')
-    if pans == 'yes':
-        jms.weapon = 5
-        mst.life = mst.life * 5
-
-        
 mst.show()
 mst.showRank()
 
@@ -71,7 +58,7 @@ while (mst.stillAlive(jms) and jms.stillAlive()):
     time.sleep(1)
     if (chkOK == "Correct"):
         mst.removeQ(theQ)
-        mst.lostHeart(jms)
+        mst.lostHeart()
     elif (chkOK == "Help"):
         continue
     else:

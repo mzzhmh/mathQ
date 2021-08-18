@@ -24,10 +24,6 @@ class monster:
         if self.life > 0:
             self.printLife()
             return True
-        elif len(self.mathDict)==0:
-            print("THE MONSTER HAS NO MORE QUESTIONS")
-            self.printVictory(player)
-            return False
         else:
             self.printVictory(player)
             return False
@@ -96,9 +92,9 @@ class monster:
             
     def removeQ(self,question):
         del self.mathDict[question[0]]
-    def lostHeart(self,player):
-        print("VERY GOOD! YOU HIT THE MONSTER REALLY HARD!!!!!! MONSTER's lost Life ♥\n")
-        self.life = self.life - 1 * player.weapon
+    def lostHeart(self):
+        print("VERY GOOD! YOU HIT THE MONSTER REALLY HARD!!!!!! MONSTER's Life -1 ♥\n")
+        self.life = self.life - 1
     def showRank(self):
         with open(self.rankfile) as rfile:
             lines = rfile.readlines()
@@ -267,25 +263,5 @@ class divMonster(monster):
         print("===========================================================")
 
         
-class yytMonster1(monster):
-    def __init__(self):
-        self.life = 0
-        self.mathDict = {}
-        self.rankfile = "yyt1Rank.txt"
-    def show(self):
-        print("===========================================================")
-        print ("""   o
-                 \_/\o
-                ( Oo)                    \|/
-                (_=-)  .===O-  ~~Z~A~P~~ -O-
-                /   \_/U'                /|\
-                ||  |_/
-                \\  |
-                {K ||
-                 | PP
-                 | ||
-                 (__\\""")
-        print("===========================================================")
-
 
         
