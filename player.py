@@ -6,6 +6,8 @@ class player:
         self.startT = 0
         self.endT = 0
         self.weapon = 1
+        self.wrongQF = open('incorrectQ.txt','w')
+        
         
     def printLife(self):
         lf = "|"
@@ -59,6 +61,9 @@ class player:
                 print("YOU HAVE USED THE 'HELP ME' CMD. SORRY :(\n")
             return "Help"
         else:
+            #record the incorrect question.
+            self.wrongQF.write((str(ques[0]))+"|||"+(str(jans))+"\n")
+            self.wrongQF.flush()
             return "Wrong"
     def lostHeart(self):
         print("<<<<<<AHHHHH! YOUR ANSWER IS WRONG! THE MONSTER HIT YOU REALLY HARD!>>>>>> YOUR Life -1 ♥\n")

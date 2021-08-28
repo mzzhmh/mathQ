@@ -43,7 +43,7 @@ jms = player()
 
 tst = input(":")
 if tst == "give me five":
-    jms.life = 5
+    jms.life = 10
 
 #give sword to player?
 if (mst.__class__.__name__ == 'yytMonster1'):
